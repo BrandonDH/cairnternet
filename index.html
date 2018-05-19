@@ -9,39 +9,31 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <body>
-    <header>
+    <header class="header">
       <h1>CAIRNTERNET</h1>
       <p>Click and drag a pebble to build a Carin.</p>
     </header>
 
     <div id="container" class="arrangement">
-
       <img class="arrangement__sm overlay ui-widget-content" src="img/pebble-1.png"></img>
-    
-      <img class="arrangement__rock overlay ui-widget-content" src="img/pebble-2.png"></img>
-    
+      <img class="small rotated arrangement__rock overlay ui-widget-content" src="img/pebble-2.png"></img>
       <img class="arrangement__boulder overlay ui-widget-content" src="img/pebble-3.png"></img>
-    
+      <img class="small rotated arrangement__geode overlay ui-widget-content" src="img/pebble-4.png"></img>
+      <img class="arrangement__pebble overlay ui-widget-content" src="img/pebble-5.png"></img>
+      <img class="rotated arrangement__stone overlay ui-widget-content" src="img/pebble-1.png"></img>
+      <img class="small arrangement__rock overlay ui-widget-content" src="img/pebble-2.png"></img>
+      <img class="rotated arrangement__boulder overlay ui-widget-content" src="img/pebble-3.png"></img>
+      <img class="small arrangement__geode overlay ui-widget-content" src="img/pebble-4.png"></img>
+      <img class="rotated arrangement__pebble overlay ui-widget-content" src="img/pebble-5.png"></img>
       <img class="arrangement__geode overlay ui-widget-content" src="img/pebble-4.png"></img>
-    
-      <img class="arrangement__pebble overlay ui-widget-content" src="img/pebble-5.png" class="overlay"></img>
-
-      <img class="arrangement__stone overlay ui-widget-content" src="img/pebble-1.png"></img>
-    
-      <img class="arrangement__rock overlay ui-widget-content" src="img/pebble-2.png"></img>
-    
-      <img class="arrangement__boulder overlay ui-widget-content" src="img/pebble-3.png"></img>
-    
-      <img class="arrangement__geode overlay ui-widget-content" src="img/pebble-4.png"></img>
-    
-      <img class="arrangement__pebble overlay ui-widget-content" src="img/pebble-5.png" class="overlay"></img>
-
-      <img class="arrangement__geode overlay ui-widget-content" src="img/pebble-4.png"></img>
-    
-      <img class="arrangement__pebble overlay ui-widget-content" src="img/pebble-5.png" class="overlay"></img>
+      <img class="small rotated arrangement__pebble overlay ui-widget-content" src="img/pebble-5.png" class="overlay"></img>
 
     </div>
-    <input type="button" value="Reset" id="reset" style="width:150px; background-color:black; color:white;">
+
+    <div class="button-container">
+      <p><i>The button below does not work yet. You will need to press the 'refresh' button in your browser, or cmd + R on your keyboard. </i></p>
+        <input class="reset-btn" type="button" value="Reset" id="reset">
+    </div>
 
     <!-- kona.js attempt -->
 
@@ -103,7 +95,7 @@
     stage.add(layer);
       
     </script> -->
-    <footer>
+    <footer class="footer">
       <p>Read the project brief: <a href="https://docs.google.com/document/d/1wJsXpLHEORHuik1HDvvOP4m6xncjPGxC5zH08dT2RPg/edit?usp=sharing" title="Read more about this project from its Google document. This link opens in the same window.">Cairnternet Google Document</a></p>
       <p><i>This project is in the process of being created by <a href="https://bherford.myportfolio.com/" title="Visit Brandon Herfords portfolio website. This link opens in the same window.">Brandon Herford</a></i></p>
       <p>Check out the <a href="https://github.com/BrandonDH/cairnternet">Github repository</a>.</p>

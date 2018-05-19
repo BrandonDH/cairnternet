@@ -9,16 +9,36 @@ body {
 	background-color: $light-slate;
 }
 
-header,
-footer {
+.header {
 	text-align: center;
+	margin-bottom: 4em;
 }
 
-footer {
-  position: fixed;
-  left: 0;
+.footer {
+	text-align: left;
   bottom: 0;
-  width: 100%;
+}
+
+.reset-btn {
+	font-size: 1.2em; 
+	padding: 1em 3em;
+	background-color: black; 
+	color: white;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+a {
+	font-weight: 800;
+	text-decoration: none;
+	color: black;
+
+	&:hover {
+		padding-bottom: .1em;
+		border-bottom: 2px solid black;
+	}
 }
 
 img {
@@ -26,18 +46,24 @@ img {
 	height: 150px; 
 }
 
-.arrangement {
-	  margin: auto;
-    width: 80%;
-    border-bottom: 1px solid black;
-
-	&__stone {}
-
-	&__rock {}
-
-	&__boulder {}
-
-	&__geode {}
-
-	&__pebble {}
+img.small {
+	width: 100px; 
+	height: 100px; 
 }
+
+
+.arrangement {
+		text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.button-container {
+	text-align: center;
+	margin: 8em 0 3em 0;
+}
+
+.rotated {
+  transform: rotate(120deg);
+}
+
+
