@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800");
-#draggable {
-  padding: 0.5em; }
-
 body {
   font-family: 'Nanum Gothic', sans-serif;
   background-color: #f2f2f1; }
@@ -17,10 +14,12 @@ body {
 .reset-btn {
   font-size: 1.2em;
   padding: 1em 3em;
-  background-color: black;
+  margin-left: 1em;
+  background-color: gray;
   color: white; }
   .reset-btn:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    background-color: black; }
 
 a {
   font-weight: 800;
@@ -29,6 +28,10 @@ a {
   a:hover {
     padding-bottom: .1em;
     border-bottom: 2px solid black; }
+
+.h1 {
+  font-size: 2em;
+  font-weight: 400; }
 
 img {
   width: 150px;
@@ -39,8 +42,7 @@ img.small {
   height: 100px; }
 
 .arrangement {
-  text-align: center;
-  border-bottom: 1px solid black; }
+  text-align: center; }
 
 .button-container {
   text-align: center;

@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800');
 $light-slate: #f2f2f1;
 
-  #draggable { 
-  	padding: 0.5em; }
-
 body {
 	font-family: 'Nanum Gothic', sans-serif;
 	background-color: $light-slate;
@@ -22,11 +19,13 @@ body {
 .reset-btn {
 	font-size: 1.2em; 
 	padding: 1em 3em;
-	background-color: black; 
+	margin-left: 1em;
+	background-color: lighten(black, 50%); 
 	color: white;
 
 	&:hover {
 		cursor: pointer;
+		background-color: black;
 	}
 }
 
@@ -41,6 +40,11 @@ a {
 	}
 }
 
+.h1 {
+	font-size: 2em;
+	font-weight: 400;
+}
+
 img {
 	width: 150px; 
 	height: 150px; 
@@ -51,10 +55,8 @@ img.small {
 	height: 100px; 
 }
 
-
 .arrangement {
 		text-align: center;
-    border-bottom: 1px solid black;
 }
 
 .button-container {
@@ -65,5 +67,3 @@ img.small {
 .rotated {
   transform: rotate(120deg);
 }
-
-
