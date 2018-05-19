@@ -1,16 +1,32 @@
 $light-slate: #f2f2f1;
 
-  #draggable { width: 150px; height: 150px; padding: 0.5em; }
+  #draggable { 
+  	padding: 0.5em; }
 
 body {
 	background-color: $light-slate;
 }
 
-.container {}
+header,
+footer {
+	text-align: center;
+}
 
-img {}
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+img {
+	width: 150px; 
+	height: 150px; 
+}
 
 .arrangement {
+	  margin: auto;
+    width: 80%;
 
 	&__stone {}
 

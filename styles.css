@@ -1,9 +1,25 @@
 #draggable {
-  width: 150px;
-  height: 150px;
   padding: 0.5em; }
 
 body {
   background-color: #f2f2f1; }
+
+header,
+footer {
+  text-align: center; }
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%; }
+
+img {
+  width: 150px;
+  height: 150px; }
+
+.arrangement {
+  margin: auto;
+  width: 80%; }
 
 /*# sourceMappingURL=styles.css.map */
