@@ -14,7 +14,7 @@ body {
 .reset-btn {
   font-size: 1.2em;
   padding: 1em 3em;
-  margin-left: 1em;
+  margin: 1em 0 1em 1em;
   background-color: gray;
   color: white; }
   .reset-btn:hover {
