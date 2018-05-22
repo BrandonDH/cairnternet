@@ -10,106 +10,46 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <body>
-
     <header class="header">
       <h1 class="h1">CAIRNTERNET</h1>
-      <p>Click and drag a pebble to build a Carin.</p>
+      <p><i>Click a pebble and drag the clone to build a Cairn. Click to rotate the clone 10 degrees.</i></p>
     </header>
 
-<!--     <div id="container" class="arrangement">
-      <img class="arrangement__sm overlay ui-widget-content" src="img/pebble-1.png"></img>
-      <img class="small rotated arrangement__rock overlay ui-widget-content" src="img/pebble-2.png"></img>
-      <img class="arrangement__boulder overlay ui-widget-content" src="img/pebble-3.png"></img>
-      <img class="small rotated arrangement__geode overlay ui-widget-content" src="img/pebble-4.png"></img>
-      <img class="arrangement__pebble overlay ui-widget-content" src="img/pebble-5.png"></img>
-      <img class="rotated arrangement__stone overlay ui-widget-content" src="img/pebble-1.png"></img>
-      <img class="small arrangement__rock overlay ui-widget-content" src="img/pebble-2.png"></img>
-      <img class="rotated arrangement__boulder overlay ui-widget-content" src="img/pebble-3.png"></img>
-      <img class="small arrangement__geode overlay ui-widget-content" src="img/pebble-4.png"></img>
-      <img class="rotated arrangement__pebble overlay ui-widget-content" src="img/pebble-5.png"></img>
-      <img class="arrangement__geode overlay ui-widget-content" src="img/pebble-4.png"></img>
-      <img class="small rotated arrangement__pebble overlay ui-widget-content" src="img/pebble-5.png" class="overlay"></img>
-    </div> -->
+    <!-- TODO: rename this section beacause 'button-container' is not descipritve of everything inside the container. -->
 
-    <div id="container" class="arrangement">
-      <img class="pebble" class="arrangement__stone overlay ui-widget-content" src="img/pebble-1.png"></img>  
-      <img class="pebble" class="arrangement__rock overlay ui-widget-content" src="img/pebble-2.png"></img>
-      <img class="pebble" class="arrangement__boulder overlay ui-widget-content" src="img/pebble-3.png"></img>
-      <img class="pebble" class="arrangement__geode overlay ui-widget-content" src="img/pebble-4.png"></img>
-      <img class="pebble" class="arrangement__pebble overlay ui-widget-content" src="img/pebble-5.png" class="overlay"></img>
-      <div id="the_cairn"></div>
+    <!-- TODO: Pass these images in an array in js or jQuery. Add the id and ui widget class -->
+
+    <div class="cairn-field">
+        <div  id="the_cairn"></div>
     </div>
 
     <div class="button-container">
+      <div id="container" class="arrangement">
+        <img class="pebble" src="img/pebble-1.png"></img>  
+        <img class="pebble" src="img/pebble-2.png"></img>
+        <img class="pebble" src="img/pebble-3.png"></img>
+        <img class="pebble" src="img/pebble-6.png"></img>
+        <img class="pebble" src="img/pebble-4.png"></img>
+        <img class="pebble" src="img/pebble-5.png"></img>
+      </div>
+
       <p><i>The button below does not work yet. Press the 'refresh' button in your browser.</i>
       <input class="reset reset-btn" type="button" value="Reset" id="reset"></p>
-      <p>Read the project brief: <a href="https://docs.google.com/document/d/1wJsXpLHEORHuik1HDvvOP4m6xncjPGxC5zH08dT2RPg/edit?usp=sharing" title="Read more about this project from its Google document. This link opens in the same window.">Cairnternet Google Document</a></p>
-      <p><i>This project is in the process of being created by <a href="https://bherford.myportfolio.com/" title="Visit Brandon Herfords portfolio website. This link opens in the same window.">Brandon Herford</a></i></p>
-      <p>Check out the <a href="https://github.com/BrandonDH/cairnternet">Github repository</a>.
-        <p><a href="mailto:brandonherford@gmail.com">Email me with feedback</a>.</p>
     </div>
 
-    <!-- kona.js attempt -->
-
-<!--     <script>
-    var width = window.innerWidth;
-    var height = window.innerHeight;
-
-    var stage = new Konva.Stage({
-        container: 'container',
-        width: width,
-        height: height
-    });
-
-    var layer = new Konva.Layer();
-
-    var colors = ["red", "orange", "yellow", "green", "blue", "purple"];
-
-    for(var i = 0; i < 20; i++) {
-      var pebble = new Image();
-      pebble.onload = function() {
-        var image = new Konva.Image({
-          x: 200,
-          y: 50,
-          image: pebble,
-          width: 100,
-          height: 100
-        });
-      };
-      pebble.src = 'img/pebble-2.png'
-
-        pebble.on("dragstart", function() {
-            this.moveToTop();
-            layer.draw();
-        });
-
-        pebble.on("dragmove", function() {
-            document.body.style.cursor = "pointer";
-        });
-        /*
-           * dblclick to remove box for desktop app
-           * and dbltap to remove box for mobile app
-           */
-        pebble.on("dblclick dbltap", function() {
-            this.destroy();
-            layer.draw();
-        });
-
-        pebble.on("mouseover", function() {
-            document.body.style.cursor = "pointer";
-        });
-        pebble.on("mouseout", function() {
-            document.body.style.cursor = "default";
-        });
-
-        layer.add(pebble);
-    }
-
-    // add the layer to the stage
-    stage.add(layer);
-      
-    </script> -->
+ 
     <footer class="footer">
+      <!-- Project brief -->
+      <p>Read the project brief: <a href="https://docs.google.com/document/d/1wJsXpLHEORHuik1HDvvOP4m6xncjPGxC5zH08dT2RPg/edit?usp=sharing" title="Read more about this project from its Google document. This link opens in the same window.">Cairnternet Google Document</a></p>
+
+      <!-- Portfolio -->
+      <p><i>This project is in the process of being created by <a href="https://bherford.myportfolio.com/" title="Visit Brandon Herfords portfolio website. This link opens in the same window.">Brandon Herford</a></i></p>
+
+      <!-- Github repo -->
+      <p>Check out the <a href="https://github.com/BrandonDH/cairnternet">Github repository</a>.</p>
+
+      <!-- Contact -->
+      <p><a href="mailto:brandonherford@gmail.com">Email me with feedback</a>.</p>
 
     </footer>
   </body>

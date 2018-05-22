@@ -8,12 +8,37 @@ body {
 
 .header {
 	text-align: center;
-	margin-bottom: 4em;
+	margin-bottom: 20em;
+}
+
+.h1 {
+	font-size: 2em;
+	font-weight: 400;
 }
 
 .footer {
-	text-align: left;
+	text-align: center;
   bottom: 0;
+}
+
+.cairn-field {
+	position: absolute;
+	left: 50%;
+	top: 200px;
+	z-index: 2;
+}
+
+.arrangement {
+	text-align: center;
+	margin: 0 5em;
+	padding: 1em 0;
+	border-top: 1px solid lighten(black, 30%);
+	border-bottom: 1px solid lighten(black, 30%);
+}
+
+.button-container {
+	text-align: center;
+	margin: 8em 0 3em 0;
 }
 
 .reset-btn {
@@ -40,28 +65,19 @@ a {
 	}
 }
 
-.h1 {
-	font-size: 2em;
-	font-weight: 400;
+.pebble {
+	width: 80px; 
+	height: 80px; 
 }
 
-img {
-	width: 150px; 
-	height: 150px; 
+.draggable {
+	width: 120px;
+	height: 120px;
 }
 
-img.small {
-	width: 100px; 
-	height: 100px; 
-}
-
-.arrangement {
-		text-align: center;
-}
-
-.button-container {
-	text-align: center;
-	margin: 8em 0 3em 0;
+.small {
+	width: 200px; 
+	height: 200px; 
 }
 
 .rotated {
