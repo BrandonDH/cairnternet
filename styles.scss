@@ -1,24 +1,46 @@
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800');
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700');
+
 $light-slate: #f2f2f1;
 
 body {
-	font-family: 'Nanum Gothic', sans-serif;
-	background-color: $light-slate;
+	font-family: 'Karla', sans-serif;
+	background-color: lighten($light-slate, 10%);
+	margin: 3em;
 }
 
 .header {
-	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
 	margin-bottom: 20em;
+
+	.h1 {
+		font-size: 2em;
+		font-weight: 700;
+		margin: 0;
+		padding: 0;
+	}
+
+	.instructions {}
 }
 
-.h1 {
-	font-size: 2em;
-	font-weight: 400;
+.footer-wrapper {
+	bottom: 0;
+	width: 100%;
+	position: absolute;
 }
 
 .footer {
-	text-align: center;
-  bottom: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+
+	.arrangement {}
+
+	.contact {
+	}
 }
 
 .cairn-field {
@@ -26,32 +48,6 @@ body {
 	left: 50%;
 	top: 200px;
 	z-index: 2;
-}
-
-.arrangement {
-	text-align: center;
-	margin: 0 5em;
-	padding: 1em 0;
-	border-top: 1px solid lighten(black, 30%);
-	border-bottom: 1px solid lighten(black, 30%);
-}
-
-.button-container {
-	text-align: center;
-	margin: 8em 0 3em 0;
-}
-
-.reset-btn {
-	font-size: 1.2em; 
-	padding: 1em 3em;
-	margin: 1em 0 1em 1em;
-	background-color: lighten(black, 50%); 
-	color: white;
-
-	&:hover {
-		cursor: pointer;
-		background-color: black;
-	}
 }
 
 a {
