@@ -1,4 +1,4 @@
-// Javascript contribution from Professor Bruce Campbell - RISD
+// Javascript contribution from Professor Bruce Campbell - RISD, 2018
 var count = 1;
 var zndx = 3;
 var rotation = 0;
@@ -29,7 +29,7 @@ $.fn.duplicate = function(cloneEvents) {
     }
 };
 
-jQuery.fn.rotate = function(degrees) {
+$.fn.rotate = function(degrees) {
     $(this).css({'transform' : 'rotate('+ degrees +'deg)'});
     return $(this);
 };
