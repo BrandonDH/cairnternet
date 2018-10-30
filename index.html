@@ -4,9 +4,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="https://cdn.rawgit.com/konvajs/konva/2.1.0/konva.min.js"></script>
-    <script src="script.js"></script>
+    
     <title>CAIRNTERNET</title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.20/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.20/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.20/js/uikit-icons.min.js"></script>
     <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <!-- Global Site Tag (gtag.js) - Google Analytics -->
@@ -15,43 +20,65 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'UA-47856723-1');
   </script>
   <body>
-    <header class="header">
-      <h1 class="h1">CAIRNTERNET</h1>
-      <p class="instructions">Desktop Only. Click a pebble and drag the clone to build a Cairn. Click again to rotate.<p>
-    </header>
-    <div class="cairn-field">
-        <div  id="the_cairn"></div>
-    </div>
-    <div class="footer-wrapper">
-      <div class="footer">
-        <div id="container" class="arrangement">
-          <img class="pebble" src="img/pebble-1.png"></img>  
-          <img class="pebble" src="img/pebble-2.png"></img>
-          <img class="pebble" src="img/pebble-3.png"></img>
-          <img class="pebble" src="img/pebble-4.png"></img>
-          <img class="pebble" src="img/pebble-5.png"></img>
-        </div>
+    <div class="uk-container">
 
+      <header class="page-top uk-flex-wrap">
+        <h1 class="uk-text-bold cairn-title">Digital Cairn</h1>
+        <p class="uk-text-lead cairn-desc">Build a modern digital Cairn</p>
+      </header>
 
-        <div class="contact">
-          <!-- Project brief -->
-          <p>Read the project brief: <a href="https://docs.google.com/document/d/1wJsXpLHEORHuik1HDvvOP4m6xncjPGxC5zH08dT2RPg/edit?usp=sharing" title="Read more about this project from its Google document. This link opens in the same window.">Cairnternet Google Document</a></p>
+      <div class="uk-text-center uk-margin-large-bottom">
+        <quote>
+          <h3>Cairn</h3>
+          /kern/, <i>noun</i><br>
+          A mound of rough stones built as a memorial or landmark, typically on a hilltop or skyline.
+        </quote><br>
+        <a class="uk-text-bold uk-link-text" href="https://www.google.com/search?q=cairn&oq=cairn&aqs=chrome..69i57j69i61j69i60.3381j0j1&sourceid=chrome&ie=UTF-8">Google Dictionary</a>
+      </div>
+    
+      <div class="uk-child-width-expand@s uk-margin-large-bottom" uk-grid>
+        <div> <img src="img/addie-with-a-cairn.png" width="400" class="uk-align-left" alt="">
+        <h3 class="uk-text-bold">Inspired by the ancient art of way finding</h3>
+        <p>and treasure hunting, cairns are shrouded in lore. I became fascinated by their posture, and presence while hiking in the White Mountains of New Hampshire with some close friends. We spent three days exploring the trails and mountainside, guided by the noble assortment of stacked pebbles and rocks.</p></div>
+      </div>
 
-          <!-- Portfolio -->
-          <p><i>This project is in the process of being created by <a href="https://bherford.myportfolio.com/" title="Visit Brandon Herfords portfolio website. This link opens in the same window.">Brandon Herford</a></i></p>
-
-          <!-- Github repo -->
-          <p>Check out the <a href="https://github.com/BrandonDH/cairnternet">Github repository</a>.</p>
-
-          <!-- Contact -->
-          <p><a href="mailto:brandonherford@gmail.com">Email me with feedback</a>.</p>
-
+      <div class="uk-text-center">
+        <h3 class="uk-text-bold">I want to share a mystical experience</h3>
+        <p> with you here, and give you the change to take part in this tradition today our digital age.</p>
+      </div>
+      
+      <div class="uk-text-center uk-margin-large-bottom">
+        <div class="cairn-canvas uk-inline">
+            <div id="the_cairn"></div>
         </div>
       </div>
+      <div class="uk-child-width-expand@s uk-margin-large-bottom" uk-grid>
+        <div>
+          <h3>Steps to build a digital Cairn</h3>
+          <ul>
+            <li>1. Click a pebble to make it appear on the canvas.</li>
+            <li>2. Click and hold to drag the new pebble.</li>
+            <li>3. Stack pebbles to build a digital Cairn.</li>
+          </ul>
+        </div>
+      <div id="container" class="uk-margin-large-bottom uk-text-center">
+        <h3>Pebbles</h3>
+        <img class="pebble" src="img/pebble-1.png"></img>  
+        <img class="pebble" src="img/pebble-2.png"></img>
+        <img class="pebble" src="img/pebble-3.png"></img>
+        <img class="pebble" src="img/pebble-4.png"></img>
+        <img class="pebble" src="img/pebble-5.png"></img>
+      </div>
+      </div>
+      
+      <footer class="uk-text-center">
+          <a class="uk-text-emphasis" href="https://bherford.myportfolio.com/" title="Visit Brandon Herfords portfolio website. This link opens in the same window.">Built By Brandon Herford</a>
+      </footer>
+
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

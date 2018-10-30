@@ -1,59 +1,36 @@
-@import url("https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800");
-@import url("https://fonts.googleapis.com/css?family=Karla:400,700");
 body {
-  font-family: 'Karla', sans-serif;
-  background-color: white;
-  margin: 3em; }
+	font-family: 'Karla', sans-serif;
+	margin: 3em;
+}
 
-.header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-bottom: 20em; }
-  .header .h1 {
-    font-size: 2em;
-    font-weight: 700;
-    margin: 0;
-    padding: 0; }
+.cairn-canvas {
+  width: 80%;
+  height: 600px;
+  border: 1px solid #abab;
+}
 
-.footer-wrapper {
-  bottom: 0;
-  width: 100%;
-  position: absolute; }
+.page-top {
+  display:-webkit-flex;
+  display:flex;
+  list-style-type:none;
+  padding:0;
+  justify-content:flex-end;
+}
 
-.footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly; }
-
-.cairn-field {
-  position: absolute;
-  left: 50%;
-  top: 200px;
-  z-index: 2; }
-
-a {
-  font-weight: 800;
-  text-decoration: none;
-  color: black; }
-  a:hover {
-    padding-bottom: .1em;
-    border-bottom: 2px solid black; }
+.cairn-title {
+  margin-right: auto;
+}
 
 .pebble {
-  width: 80px;
-  height: 80px; }
+	width: 90px; 
+  height: 90px; 
+}
 
 .draggable {
-  width: 120px;
-  height: 120px; }
-
-.small {
-  width: 200px;
-  height: 200px; }
+	width: 120px;
+	height: 120px;
+}
 
 .rotated {
-  transform: rotate(120deg); }
-
-/*# sourceMappingURL=styles.css.map */
+  transform: rotate(120deg);
+}
