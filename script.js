@@ -6,8 +6,8 @@ var rotation = 0;
 $( function() {
     $( ".pebble" ).click(function () {                              
         $( this ).duplicate(document.getElementById('container').value).insertAfter("#the_cairn");
-        $( ".draggable" ).draggable();
-        $( ".draggable" ).click(function () {
+        $( ".draggable" ).draggabilly();
+        $( ".draggable" ).draggabilly(function () {
             rotation += 45;
             $( this ).rotate(rotation);
         });
