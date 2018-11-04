@@ -7,7 +7,7 @@ $( function() {
     $( ".pebble" ).click(function () {                              
         $( this ).duplicate(document.getElementById('container').value).insertAfter("#the_cairn");
         $( ".draggable" ).draggabilly();
-        $( ".rotate" ).draggabilly(function () {
+        $( ".draggable" ).click(function () {
             rotation += 45;
             $( this ).rotate(rotation);
         });
@@ -20,7 +20,6 @@ $.fn.duplicate = function(cloneEvents) {
         var tmp = [];
         var the_clone = this.clone(cloneEvents);
         the_clone.addClass('draggable');
-        the_clone.addClass('rotate');
         the_clone.css("position", "absolute");
         the_clone.css("left", "100px");
         the_clone.css("z-index", zndx++);
