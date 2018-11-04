@@ -1,24 +1,29 @@
 body {
 	font-family: 'Karla', sans-serif;
-	margin: 3em;
+
 }
 
 .cairn-canvas {
-  width: 80%;
-  height: 600px;
+  width: 100%;
+  height: 100%;
   border: 1px solid #abab;
 }
 
 .page-top {
-  display:-webkit-flex;
-  display:flex;
-  list-style-type:none;
-  padding:0;
-  justify-content:flex-end;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.addie {
+  box-shadow: 0 5px 15px rgba(0,0,0,.08);
 }
 
 .cairn-title {
-  margin-right: auto;
+  margin: 0 auto 0 0 !important;
+}
+
+.cairn-desc {
+  margin: 0;
 }
 
 .pebble {
