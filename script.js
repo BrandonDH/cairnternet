@@ -6,13 +6,15 @@ var rotation = 0;
 $( function() {
     $( ".pebble" ).click(function () {                              
         $( this ).duplicate(document.getElementById('container').value).insertAfter("#the_cairn");
+
         $( ".draggable" ).draggabilly();
+
         $( ".rotate" ).click(function () {
-            rotation += 45;
+            rotation += 22.5;
             $( this ).rotate(rotation);
         });
     });
-} );
+});
 
 /* extend JQuery function (fn) member to create duplicates */ 
 $.fn.duplicate = function(cloneEvents) {
